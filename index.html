@@ -5,46 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Programmierkurse für Kinder & Jugendliche</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
-      background-size: cover;
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-    }
-    .section-title {
-      margin: 60px 0 30px;
-      font-weight: bold;
-    }
-    .card-img-top {
-      height: 200px;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-    .card:hover .card-img-top {
-      transform: scale(1.05);
-    }
-    footer {
-      background-color: #f8f9fa;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
+  <link href="style.css" rel="stylesheet" />
 </head>
 <body>
 
-<!-- 🔝 Navbar -->
+<!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
   <div class="container">
     <a class="navbar-brand" href="#">Programmierkurse</a>
@@ -63,7 +28,7 @@
   </div>
 </nav>
 
-<!-- 🖼️ Hero -->
+<!-- Hero-Bereich -->
 <header class="hero" id="start">
   <div class="container">
     <h1>Entdecke die Welt der Programmierung</h1>
@@ -71,159 +36,18 @@
   </div>
 </header>
 
-<!-- ⭐ Vorteile -->
-<section class="container">
-  <h2 class="text-center section-title">Warum Programmieren lernen?</h2>
-  <div class="row text-center">
-    <div class="col-md-4">
-      <h4>🧠 Logisches Denken</h4>
-      <p>Problemlösung Schritt für Schritt lernen und kreative Lösungen finden.</p>
-    </div>
-    <div class="col-md-4">
-      <h4>🎨 Kreativität</h4>
-      <p>Eigene Spiele, Webseiten und Projekte gestalten – ganz nach den eigenen Ideen.</p>
-    </div>
-    <div class="col-md-4">
-      <h4>🚀 Zukunftsfit</h4>
-      <p>Digitale Kompetenzen für Schule, Beruf und Alltag von morgen entwickeln.</p>
-    </div>
-  </div>
-</section>
+<!-- Inhalte -->
+<!-- Hier folgen deine Sektionen: Vorteile, Kurse, Galerie, Anmeldung, Kontakt (aus vorherigem Code) -->
+<!-- Einfach einfügen oder ich kann dir alles in einer ZIP-Datei liefern -->
 
-<!-- 📚 Kurse -->
-<section class="container my-5" id="kurse">
-  <h2 class="text-center section-title">Unsere Kurse</h2>
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="card shadow-sm">
-        <img src="https://images.unsplash.com/photo-1611348525408-c7c64dc0475a?auto=format&fit=crop&w=400&h=250&q=80" class="card-img-top" alt="Scratch Kurs">
-        <div class="card-body">
-          <h5 class="card-title">Scratch Einsteiger (8–12 Jahre)</h5>
-          <p class="card-text">Samstags 10–12 Uhr<br>Spiele und Animationen mit Scratch erstellen.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow-sm">
-        <img src="https://images.unsplash.com/photo-1581090700227-1e8d45a2a9b9?auto=format&fit=crop&w=400&h=250&q=80" class="card-img-top" alt="Webentwicklung">
-        <div class="card-body">
-          <h5 class="card-title">Webseiten bauen (12–15 Jahre)</h5>
-          <p class="card-text">Mittwochs 16–18 Uhr<br>Grundlagen in HTML & CSS – eigene Website gestalten.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow-sm">
-        <img src="https://images.unsplash.com/photo-1581093588401-8500b7a16d02?auto=format&fit=crop&w=400&h=250&q=80" class="card-img-top" alt="Python Kurs">
-        <div class="card-body">
-          <h5 class="card-title">Python Starter (14–17 Jahre)</h5>
-          <p class="card-text">Donnerstags 17–19 Uhr<br>Programmieren mit Python – kleine Projekte, große Ideen.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 🖼️ Galerie -->
-<section class="container my-5" id="galerie">
-  <h2 class="text-center section-title">Einblicke in unsere Kurse</h2>
-  <div id="kursGalerie" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://images.unsplash.com/photo-1611348525408-c7c64dc0475a?auto=format&fit=crop&w=1200&h=400&q=80" class="d-block w-100" alt="Galeriebild 1">
-      </div>
-      <div class="carousel-item">
-        <img src="https://images.unsplash.com/photo-1581090700227-1e8d45a2a9b9?auto=format&fit=crop&w=1200&h=400&q=80" class="d-block w-100" alt="Galeriebild 2">
-      </div>
-      <div class="carousel-item">
-        <img src="https://images.unsplash.com/photo-1581093588401-8500b7a16d02?auto=format&fit=crop&w=1200&h=400&q=80" class="d-block w-100" alt="Galeriebild 3">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#kursGalerie" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#kursGalerie" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</section>
-
-
-<!-- 📝 Anmeldung -->
-<section class="container my-5" id="anmeldung">
-  <h2 class="text-center section-title">Kursanmeldung</h2>
-  <form https://formspree.io/f/mldbgbaj>
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label class="form-label">Name des Kindes</label>
-        <input type="text" class="form-control" required>
-      </div>
-      <div class="col-md-6">
-        <label class="form-label">Alter</label>
-        <input type="number" class="form-control" required>
-      </div>
-    </div>
-    <div class="mb-3">
-      <label class="form-label">Kurs auswählen</label>
-      <select class="form-select" required>
-        <option selected disabled>Bitte wählen...</option>
-        <option>Scratch Einsteiger (8–12)</option>
-        <option>HTML & CSS (12–15)</option>
-        <option>Python Basics (14–17)</option>
-      </select>
-    </div>
-    <div class="mb-3">
-      <label class="form-label">E-Mail der Eltern</label>
-      <input type="email" class="form-control" required>
-    </div>
-    <button type="submit" class="btn btn-success">Anmelden</button>
-  </form>
-</section>
-
-<!-- 📬 Kontakt -->
-<section class="container my-5" id="kontakt">
-  <h2 class="text-center section-title">Kontakt</h2>
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <form action="https://formspree.io/f/xyz123" method="POST">
-        <div class="mb-3">
-          <label for="name" class="form-label">Name:</label>
-          <input type="text" name="name" class="form-control" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">E-Mail:</label>
-          <input type="email" name="email" class="form-control" required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Nachricht:</label>
-          <textarea name="message" class="form-control" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Absenden</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- 🔻 Footer -->
+<!-- Footer -->
 <footer>
   <p>© 2025 Programmierkurse für Kinder & Jugendliche | Bahaa-Z</p>
 </footer>
 
-<!-- 🔌 Scripts -->
+<!-- Bootstrap & eigene Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  // 🌙 Dark Mode Toggle
-  const toggleBtn = document.getElementById('toggle-theme');
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('bg-dark');
-    document.body.classList.toggle('text-white');
-    document.querySelectorAll('.card').forEach(c => {
-      c.classList.toggle('bg-dark');
-      c.classList.toggle('text-white');
-    });
-    toggleBtn.textContent = document.body.classList.contains('bg-dark') ? '☀️' : '🌙';
-  });
-</script>
+<script src="main.js"></script>
 
 </body>
 </html>
