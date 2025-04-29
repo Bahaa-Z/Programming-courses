@@ -1,143 +1,150 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vorteile des Programmierens für Kinder</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Programmierkurse für Kinder & Jugendliche</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
     }
-    header {
-      background-color: #007bff;
+    .hero {
+      background: url('https://source.unsplash.com/1600x500/?coding,children') no-repeat center center;
+      background-size: cover;
       color: white;
-      padding: 40px 20px;
+      padding: 100px 20px;
       text-align: center;
     }
-    section {
-      padding: 50px 20px;
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
-    .feature {
-      background: white;
-      border-radius: 8px;
-      padding: 25px;
-      margin-bottom: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    .section-title {
+      margin: 60px 0 30px;
+      font-weight: bold;
     }
-    .feature h3 {
-      color: #007bff;
+    .card img {
+      height: 200px;
+      object-fit: cover;
     }
-    .lang-block {
-      display: flex;
-      flex-direction: column;
-    }
-    @media (min-width: 768px) {
-      .lang-block {
-        flex-direction: row;
-        justify-content: space-between;
-      }
-      .lang-block > div {
-        width: 48%;
-      }
+    footer {
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Vorteile des Programmierens für Kinder</h1>
-  <p>Benefits of Programming for Children</p>
-</header>
-
-<main class="container">
-
-  <section>
-    <div class="feature">
-      <div class="lang-block">
-        <div>
-          <h3>🧠 Logisches Denken & Problemlösung</h3>
-          <p>Wie man logisch denkt, Ideen in Schritte und Punkte gliedert und komplexe Probleme in kleinere Teile zerlegt. Kinder lernen, verschiedene Lösungen für ein Problem zu finden – eine Fähigkeit, die nicht nur in der Programmierung nützlich ist.</p>
-        </div>
-        <div>
-          <h3>🧠 Logical Thinking & Problem Solving</h3>
-          <p>How to think logically and break down ideas into steps and points. They learn to handle complex problems by dividing them into smaller parts and considering multiple solutions – useful beyond programming.</p>
-        </div>
+  <!-- 🔝 Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Programmierkurse</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#start">Start</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kurse">Kurse</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <div class="feature">
-      <div class="lang-block">
-        <div>
-          <h3>💡 Technologie verstehen</h3>
-          <p>Programmieren hilft Kindern zu verstehen, wie Technologie funktioniert. Sie werden aktive Gestalter statt nur passive Nutzer.</p>
-        </div>
-        <div>
-          <h3>💡 Understanding Technology</h3>
-          <p>Programming helps children understand how technology works. They become creators, not just consumers.</p>
-        </div>
+  <!-- 🖼️ Hero Panel -->
+  <header class="hero" id="start">
+    <div class="container">
+      <h1>Entdecke die Welt der Programmierung</h1>
+      <p class="lead">Spaß, Kreativität und logisches Denken für Kinder & Jugendliche</p>
+    </div>
+  </header>
+
+  <!-- ⭐ Vorteile -->
+  <section class="container">
+    <h2 class="text-center section-title">Warum Programmieren lernen?</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h4>🧠 Logisches Denken</h4>
+        <p>Problemlösung Schritt für Schritt lernen und kreative Lösungen finden.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>🎨 Kreativität</h4>
+        <p>Eigene Spiele, Webseiten und Projekte gestalten – ganz nach den eigenen Ideen.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>🚀 Zukunftsfit</h4>
+        <p>Digitale Kompetenzen für Schule, Beruf und Alltag von morgen entwickeln.</p>
       </div>
     </div>
+  </section>
 
-    <div class="feature">
-      <div class="lang-block">
-        <div>
-          <h3>🎨 Kreativität und Innovation</h3>
-          <p>Kinder können eigene Spiele, Animationen oder digitale Kunst gestalten und ihre Ideen kreativ umsetzen.</p>
-        </div>
-        <div>
-          <h3>🎨 Creativity & Innovation</h3>
-          <p>Children can design their own games, animations, or digital art, expressing their ideas in creative ways.</p>
+  <!-- 📚 Kurse -->
+  <section class="container my-5" id="kurse">
+    <h2 class="text-center section-title">Unsere Kurse</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://source.unsplash.com/400x250/?scratch,kids" class="card-img-top" alt="Scratch Kurs">
+          <div class="card-body">
+            <h5 class="card-title">Scratch für Einsteiger (8–12 Jahre)</h5>
+            <p class="card-text">Samstags 10–12 Uhr<br>Spiele und Animationen mit Scratch erstellen.</p>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="feature">
-      <div class="lang-block">
-        <div>
-          <h3>🤝 Zusammenarbeit & Kommunikation</h3>
-          <p>Programmieren fördert Teamarbeit und den Austausch von Ideen – wichtige Fähigkeiten für Schule und Beruf.</p>
-        </div>
-        <div>
-          <h3>🤝 Collaboration & Communication</h3>
-          <p>Programming encourages teamwork and idea-sharing – essential skills for school and work environments.</p>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://source.unsplash.com/400x250/?html,css" class="card-img-top" alt="Webentwicklung">
+          <div class="card-body">
+            <h5 class="card-title">Webseiten bauen (12–15 Jahre)</h5>
+            <p class="card-text">Mittwochs 16–18 Uhr<br>Grundlagen in HTML & CSS – eigene Website gestalten.</p>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="feature">
-      <div class="lang-block">
-        <div>
-          <h3>🚀 Selbstvertrauen aufbauen</h3>
-          <p>Eigene Projekte erfolgreich umsetzen stärkt das Selbstvertrauen und zeigt Kindern, dass sie Herausforderungen meistern können.</p>
-        </div>
-        <div>
-          <h3>🚀 Building Self-Confidence</h3>
-          <p>Successfully building projects gives children confidence and shows them they can overcome difficult challenges.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="feature">
-      <div class="lang-block">
-        <div>
-          <h3>🎯 Vorbereitung auf die Zukunft</h3>
-          <p>Technologische Fähigkeiten sind in der Zukunft stark gefragt. Programmieren bereitet Kinder bestens darauf vor.</p>
-        </div>
-        <div>
-          <h3>🎯 Preparing for the Future</h3>
-          <p>Technology skills are in high demand. Programming helps prepare children for the job market of tomorrow.</p>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://source.unsplash.com/400x250/?python,coding" class="card-img-top" alt="Python Kurs">
+          <div class="card-body">
+            <h5 class="card-title">Python Starter (14–17 Jahre)</h5>
+            <p class="card-text">Donnerstags 17–19 Uhr<br>Programmieren mit Python – kleine Projekte, große Ideen.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-</main>
+  <!-- 📬 Kontakt -->
+  <section class="container my-5" id="kontakt">
+    <h2 class="text-center section-title">Kontakt & Anmeldung</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Dein Name" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-Mail:</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Nachricht:</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Frage, Anmeldung, Feedback..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Absenden</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-<footer class="text-center py-4 bg-light mt-4">
-  <p>© 2025 Alle Rechte vorbehalten | All rights reserved</p>
-</footer>
+  <footer>
+    <p>© 2025 Programmierkurse für Kinder & Jugendliche | Bahaa-Z</p>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
